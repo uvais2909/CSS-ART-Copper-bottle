@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgrey;
+}
+section{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background-color: #002e63;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+.cap{
+    position: absolute;
+    top: 92px;
+    left: 215px;
+    height: 60px;
+    width: 70px;
+    background-color: #ca4f36;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    -moz-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    box-shadow: inset 10px -10px 17px -4px rgba(0,0,0,0.61);
+}
+.cap::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 86%;
+    border: 5px solid pink;
+    border-radius: 50%;
+    top: -2.5px;
+    background-color: #ca4f36;
+}
+.cap::after{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    border-radius: 30%;
+    border-bottom: 5px solid pink;
+    left: 0px;
+    top: 18px;
+    z-index: 2;
+    background-color: #ca4f36;
+    -webkit-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    -moz-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    box-shadow: inset 10px -10px 17px -4px rgba(0,0,0,0.61);
+}
+.head{
+    position: absolute;
+    top: 150px;
+    left: 175px;
+    height: 100px;
+    width: 150px;
+    background-color: #e2725b;
+    border-radius: 45px 45px 0px 0px;
+    z-index: 1;
+    -webkit-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    -moz-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    box-shadow: inset 10px 10px 17px -4px rgba(0,0,0,0.61);
+}
+.head::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 115px;
+    height: 85px;
+    width: 10px;
+    border-radius: 0px 45px 0px 0px;
+    border-right: 15px solid pink;
+}
+.bottle{
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 150px;
+    background-color: #e2725b;
+    border-radius: 0px 0px 20px 20px;
+    -webkit-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    -moz-box-shadow: inset 10px 0px 17px 4px rgba(0,0,0,0.61);
+    box-shadow: inset 10px -10px 17px -4px rgba(0,0,0,0.61);
+}
+.bottle::before{
+    content: "";
+    position: absolute;
+    height: 193px;
+    width: 0px;
+    left: 125px;
+    border-radius: 0px 0px 10px 0px;
+    border-right: 15px solid pink;
+}
